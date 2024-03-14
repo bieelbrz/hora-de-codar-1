@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lógica de Programação 1</title>
+
+    <script>
+
+        // // Comentário de uma linha só 
+
+        // /* 
+        //     Comentário de várias linhas
+
+        //     Todo programa segue três fases básicas:
+        //     1. Entrada de dados
+        //     2. Processamento
+        //     3. Saída de dados
+
+        // */
+
+        // // Entrada de dados
+        // var hamburguer = 2;
+        // var batata = 3;
+        // var refri = 5;
+
+        // // Processamento
+        // var resultado = hamburguer + (batata + 10 + 20 + 30 + (1 + hamburguer * hamburguer) - 1 * (batata + 1) / 2) * (hamburguer + 1) * ( (batata - 1) * (refri / 5) / (refri / 1)) * hamburguer + (batata + 10 + 20 + 30 + (1 + hamburguer * hamburguer) - 1 * (batata + 1) / 2) * (hamburguer + 1) * ( (batata - 1) * (refri / 5) / (refri / 1)) * hamburguer + (batata + 10 + 20 + 30 + (1 + hamburguer - hamburguer) - 1 / (batata + 1) / 2) * (hamburguer + 1) * ( (batata - 1) * (refri / 5) / (refri / 1)) + 8 / 2 + hamburguer + (batata + 10 + 20 + 30 + (1 + hamburguer * hamburguer) - 1 * (batata + 1) / 2) * (hamburguer + 1) ** ( (batata - 1) * (refri / 5) / (refri / 1)) * hamburguer + (batata + 10 + 20 + 30 + (1 + hamburguer * hamburguer) - 1 * (batata + 1) / 2) * (hamburguer + 1) * ( (batata - 1) * (refri / 5) / (refri / 1)) * hamburguer + (batata + 10 + 20 + 30 + (1 + hamburguer * hamburguer) - 1 * (batata + 1) / 2) * (hamburguer + 1) * ( (batata - 1) * (refri / 5) / (refri / 1)) + 8 / 2;
+    
+        // // Saída de dados
+        // //alert(resultado); // Cria uma janela no navegador
+        // //console.log(resultado); // Mostra o resultado no console do navegador
+        // //document.write(resultado); // Escreve o resultado na página
+
+
+        // /////////////////////////////////////////////////////////////////
+        // /////////////////////////////////////////////////////////////////
+        // /////////////////////////////////////////////////////////////////
+
+        // // Exemplos de tipos de dados
+        // var nome = "Thiago Alves Monteiro Nascimento"; // String
+        // var idade = 17; // Number (Inteiro)
+        // var altura = 1.70; // Number (Float, Double ou Real)
+        // var solteiro = true; // Boolean
+        // var comprometido = false; // Boolean
+        // var endereco = { // Object
+        //     rua: "Rua das Flores",
+        //     numero: 123,
+        //     bairro: "Centro"
+        // };
+        // var lista = ["maçã", "banana", "laranja"]; // Array ou Vetor
+
+        // // Exemplos de operadores
+        // var a = 10; // Atribuição
+        // var b = 5;
+        // var c = a + b; // Adição 
+        // var d = a - b; // Subtração
+        // var e = a * b; // Multiplicação
+        // var f = a / b; // Divisão
+        // var g = a % b; // Módulo (Resto da Divisão)
+        // var h = a++;   // Incremento -> a = a + 1 OU a += 1
+        // var i = a--;   // Decremento -> a = a - 1 OU a -= 1
+
+        // // Concatenação
+        //  //alert(a + " " + b + " " + c + " " + d + " " + e + " " + f + " " + g + " " + h + " " + i);
+
+        // var j = "Thiago";
+        // var k = "Alves";
+        // var l = j + " " + k; // Thiago Alves
+        
+        // //alert(l);    
+
+        // // Prompt 
+        // // Sempre retorna o seu valor em String
+        // var nome = prompt("Informe o seu nome, please: ");
+
+        // var idade = prompt("Informe a sua idade, please: "); // "20"
+
+        //EXERCÍCIOS DE HORA DE CODAR 1
+
+        // 1 - Escreva um programa em Javascript e crie uma variável chamada "nome_do_carro" e atribua-a um valor "Fusca". Exiba-a ao usuário.
+
+        var nome_do_carro = prompt("Digite o nome do carro:");
+
+        alert("O nome do carro é: "+ nome_do_carro);
+
+        // 2 - Escreva um programa em Javascript em que o usuário informe o seu nome e exiba a mensagem "Olá, [NomeDoUsuario]".
+
+        var nomeDoUsuario = prompt("Digite o seu nome: ");
+
+        alert("Olá, " + nomeDoUsuario );
+
+        // 3 - Escreva um programa em Javascript em que o usuário informe o seu nome e em seguida o programa perguntará a idade do usuário. Agora o programa deve exibir a mensagem "Olá, [NomeDoUsuario], sua idade é [idade]".
+
+        var idadeDoUsuario = prompt("Digite a sua idade:");
+
+        alert("Olá "+ nomeDoUsuario + ", sua idade é de " + idadeDoUsuario + " anos!");
+
+        // 4 -  Considerando a figura abaixo, escreva um programa para cada forma que calcule e exiba em tela cada uma de suas respectivas áreas. O usuário irá informar os valores de cada variável.
+
+        //Retângulo
+
+        var base = prompt("Informe a base do retângulo: ");
+        var altura = prompt("Informe a altura do retângulo: ");
+        var area = base * altura;
+        alert("A área do retângulo é: " + area);
+
+        //Quadrado 
+
+        var lado = prompt("Informe o lado do quadrado: ");
+        var area = lado * lado;
+        alert("A área do quadrado é: " + area);
+
+        //Losangulo 
+
+        var diagonalMaior = prompt("Informe a diagonal maior do losango: ");
+        var diagonalMenor = prompt("Informe a diagonal menor do losango: ");
+        var area = (diagonalMaior * diagonalMenor) / 2;
+        alert("A área do losango é: " + area);
+
+        //Trapézio 
+
+        var baseMaior = prompt("Informe a base maior do trapézio: ");
+        var baseMenor = prompt("Informe a base menor do trapézio: ");
+        var altura = prompt("Informe a altura do trapézio: ");
+        var area = ((baseMaior + baseMenor ) * altura) / 2;
+        alert("A área do trapézio é: " + area);
+
+        //Paralelogramo
+
+        var baseD = prompt("Informe a base do paralelogramo: ");
+        var alturaD = prompt("Informe a altura do paralelogramo: ");
+        var areaD = baseD * alturaD;
+        alert("A área do paralelogramo é: " + areaD);
+
+        //Triângulo 
+
+        var baseT = prompt("Informe a base do Triângulo: ");
+        var alturaT = prompt("Informe a altura do triângulo: ");
+        var areaT = (baseT * alturaT) / 2;
+        alert("A área do triângulo é: " + areaT);
+
+        //Circulo 
+
+        var raio = prompt("Informe o raio do circulo: ");
+        var areaC = Math.PI * Math.pow(raio, 2);
+        alert("A área do círculo é aproximadamente: " + areaC);
+
+// 5- Para que serve o comando "alert" em Javascript?
+// O alert é um comando do js que serve para criar como se fosse uma espécie de "caixa" que pode ser usada para dialogar com o usuário.
+
+// 6- Para que serve o comando "prompt" em Javascript?
+// O pompt é um comando do js que serve para armazenar e entender o que o usuário está escrevendo ou pedindo
+
+// 7- Para que serve o comando "console.log()" em Javascript?
+// O console.log é um comando do js que serve para mostrar informações no console do navegador que podem ser vistas geralmente apertando a tecla f12
+
+
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>
